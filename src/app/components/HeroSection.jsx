@@ -4,26 +4,19 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Importação dinâmica do componente react-typed (com SSR desabilitado)
-import dynamic from "next/dynamic";
-const Typed = dynamic(
-  () => import("react-typed").then((mod) => mod.ReactTyped),
-  { ssr: false }
-);
-
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[650px] flex items-center justify-center text-center text-white">
+    <div className="relative w-full h-[80vh] flex items-center justify-center text-center text-white">
       {/* Iframe de fundo */}
       <iframe
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&controls=0&showinfo=0"
+        src="https://www.youtube.com/embed/YYXyLYA2M7I?si=q34PJ92aQqliw3IS"
         frameBorder="0"
         allow="autoplay; fullscreen; loop; encrypted-media; picture-in-picture"
       ></iframe>
 
       {/* Sobreposição escura */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-85"></div>
 
       {/* Conteúdo principal */}
       <div className="relative z-10 px-6 max-w-4xl">
@@ -35,42 +28,40 @@ const HeroSection = () => {
           height={100}
         />
         <h1 className="text-3xl md:text-5xl font-bold">
-          O <span className="text-blue-400">Primeiro Passo</span> para{" "}
-          <Typed
-            strings={[
-              "Transformar sua Carreira!",
-              "Mudar sua Vida Profissional!",
-              "Alavancar sua Fisioterapia Domiciliar!",
-            ]}
-            typeSpeed={50}
-            backSpeed={30}
-            loop
-          />
+          O <span className="text-[#05D8FF]">Primeiro Passo</span> para Transformar sua Carreira!
         </h1>
         <p className="mt-4 text-lg">
           Descubra como iniciar sua jornada empreendedora com orientação prática, segurança
           financeira e marketing de impacto.
         </p>
 
-        {/* Botão com efeito de animação usando Framer Motion */}
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.2 },
-          }}
-          animate={{
-            scale: [1, 1.05, 1],
-            transition: {
-              duration: 1.5,
-              ease: "easeInOut",
-              repeat: Infinity,
-            },
-          }}
-          className="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg focus:outline-none shadow-black"
-        >
+        {/* Botão com animação de pulsação usando CSS */}
+        <button className="mt-6 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-24 py-3 rounded-full focus:outline-none animate-scale">
           QUERO FAZER PARTE DO TIME!
-        </motion.button>
+        </button>
       </div>
+      
+      <style jsx>{`
+        @keyframes scaleAnimation {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        .animate-scale {
+          animation: scaleAnimation 1.5s ease-in-out infinite;
+        }
+
+        .animate-scale:hover {
+          animation: scaleAnimation 0.2s ease-in-out forwards;
+        }
+      `}</style>
     </div>
   );
 };

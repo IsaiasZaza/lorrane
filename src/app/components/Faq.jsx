@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -38,9 +38,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5]">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl text-center mb-8 text-blue-500 font-bold">
+        <h2 className="text-3xl lg:text-4xl text-center mb-8 text-[#00C6FF] font-bold">
           Tudo o que você precisa saber!
         </h2>
         <p className="text-center text-lg text-gray-700 mb-6">
@@ -51,10 +51,10 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`transition-all duration-300 bg-white p-6 shadow-lg rounded-2xl border ${
+              className={`bg-white bg-opacity-70 backdrop-blur-md p-6 rounded-2xl transition-shadow transform hover:-translate-y-1 duration-300 ease-in-out ${
                 activeIndex === index
-                  ? " ring-blue-300"
-                  : "border-gray-200"
+                  ? "border-l-4 border-[#00C6FF] shadow-xl"
+                  : "border border-gray-200 shadow-md hover:shadow-xl"
               }`}
             >
               <div
@@ -65,14 +65,14 @@ const FAQ = () => {
                   {faq.question}
                 </h3>
                 {activeIndex === index ? (
-                  <FiChevronUp className="text-2xl text-blue-500 transition-transform duration-200" />
+                  <FiMinus className="text-2xl text-[#00C6FF]" />
                 ) : (
-                  <FiChevronDown className="text-2xl text-gray-500 transition-transform duration-200" />
+                  <FiPlus className="text-2xl text-gray-500" />
                 )}
               </div>
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  activeIndex === index ? "max-h-40 mt-4" : "max-h-0"
+                  activeIndex === index ? "max-h-96 mt-4" : "max-h-0"
                 }`}
               >
                 <p className="text-gray-700 leading-relaxed">{faq.answer}</p>

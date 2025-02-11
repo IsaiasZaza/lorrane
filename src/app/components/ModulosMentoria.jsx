@@ -53,10 +53,10 @@ const modules = [
 
 const ModulosMentoria = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4">
+    <section className="bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5] py-12 px-4">
       <h2 className="text-center text-2xl md:text-4xl font-bold mb-8">
         Conheça os módulos da mentoria:{" "}
-        <span className="text-blue-500">"Saúde, Café e Inovação:"</span>
+        <span className="text-[#05D8FF]">"Saúde, Café e Inovação:"</span>
       </h2>
       <div className="max-w-6xl mx-auto">
         <Swiper

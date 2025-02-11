@@ -17,9 +17,7 @@ export default function Home() {
       <ModulosMentoria />
       <QueroFaze />
       <ImersaoSection />
-      <div className="bg-black">
         <Formulário />
-      </div>
       <FAQ />
     </>
   );
