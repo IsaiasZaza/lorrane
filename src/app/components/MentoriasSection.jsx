@@ -65,9 +65,9 @@ const MentoriaSection = () => {
         transition={{ duration: 0.6 }}
       >
         <img
-          src="/lorrane4.png"
+          src="/lorrane-mentoria.png"
           alt="Mentora"
-          className="w-full -mt-30 sm:w-[500px] md:w-[600px] lg:w-[700px] h-[700px] object-cover lg:mt-1"
+          className="w-full h-[500px] -mt-30 sm:w-[500px] md:w-[600px] lg:w-[700px] lg:h-[700px] object-cover lg:mt-1"
         />
       </motion.div>
 
