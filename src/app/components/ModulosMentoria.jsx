@@ -64,16 +64,17 @@ const ModulosMentoria = () => {
           spaceBetween={20}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
-            640: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 }
+            800: { slidesPerView: 3 },
+            1024: { slidesPerView: 3 }
           }}
           loop={true}
         >
           {modules.map((module) => (
             <SwiperSlide key={module.id}>
               <div className="relative rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition duration-300">
-                <div className="relative h-96">
+                <div className="relative lg:h-[60vh] h-[63vh]">
                   <Image
                     src={module.image}
                     alt={module.name}
