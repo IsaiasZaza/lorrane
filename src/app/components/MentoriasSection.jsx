@@ -12,10 +12,10 @@ const listItemVariants = {
 
 const MentoriaSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-white px-6 md:px-36 flex flex-col md:flex-row items-center">
+    <section className="bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-white px-6 md:px-36 flex flex-col lg:flex-row items-center">
       {/* Conteúdo de texto */}
       <motion.div
-        className="md:w-1/3 mx-auto text-center md:text-left mb-10 md:mb-0 py-12"
+        className="w-full lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0 py-12 "
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
@@ -43,7 +43,7 @@ const MentoriaSection = () => {
           ].map((text, index) => (
             <motion.li
               key={index}
-              className="flex items-center gap-3"
+              className="flex items-center text-start gap-3"
               variants={listItemVariants}
             >
               <AiFillCheckCircle className="text-[#05D8FF] text-2xl flex-shrink-0" />
@@ -57,19 +57,17 @@ const MentoriaSection = () => {
         </button>
       </motion.div>
 
-      {/* Imagem */}
+      {/* Imagem - fica ao lado em telas grandes e abaixo em telas menores */}
       <motion.div
-        className="md:w-1/3 mx-auto flex justify-center"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        className="w-full lg:w-1/2 flex justify-center lg:justify-end order-last lg:order-none"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <Image
-          src="/mulher.png"
+        <img
+          src="/lorrane3.png"
           alt="Mentora"
-          width={300}
-          height={400}
-          className="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md rounded-lg"
+          className="w-full -my-12 -mt-40 sm:w-[500px] md:w-[600px] lg:w-[700px] h-[700px] object-cover lg:mt-1"
         />
       </motion.div>
 

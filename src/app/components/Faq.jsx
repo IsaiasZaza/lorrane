@@ -7,14 +7,14 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "Como posso me inscrever no curso?",
+      question: "A mentoria será online ou presencial?",
       answer:
-        "Você pode se inscrever diretamente em nosso site, na página do curso de sua preferência. Basta clicar em 'Inscreva-se' e preencher os dados necessários.",
+        "A mentoria será 100% online, com aulas gravadas e acesso a materiais exclusivos na plataforma.",
     },
     {
-      question: "Os cursos são presenciais ou online?",
+      question: "Preciso ter experiência prévia para participar?",
       answer:
-        "Nossos cursos são 100% online, permitindo que você estude de qualquer lugar e no seu próprio ritmo.",
+        "Não! A mentoria foi criada para atender tanto iniciantes quanto profissionais que desejam se especializar em atendimento domiciliar.",
     },
     {
       question: "O que está incluído no preço do curso?",
@@ -22,14 +22,19 @@ const FAQ = () => {
         "O preço do curso inclui acesso completo ao conteúdo, materiais de estudo, fóruns de discussão e certificação ao final do curso.",
     },
     {
-      question: "Há algum pré-requisito para os cursos?",
+      question: "Posso parcelar o valor da mentoria?",
       answer:
-        "A maioria dos nossos cursos não exige pré-requisitos. No entanto, alguns cursos podem exigir conhecimentos básicos em áreas relacionadas.",
+        "Sim, oferecemos opções de pagamento parcelado no cartão de crédito.",
     },
     {
-      question: "Como funciona a certificação?",
+      question: "Como funcionam os bônus?",
       answer:
-        "Ao concluir um curso, você receberá um certificado digital que pode ser baixado diretamente do nosso portal de cursos.",
+        "Os bônus serão disponibilizados ao longo da mentoria, com acesso garantido após a inscrição.",
+    },
+    {
+      question: "Até quando posso me inscrever?",
+      answer:
+        "As inscrições para a primeira turma encerram em [data específica]. Garanta sua vaga antes que as inscrições acabem!",
     },
   ];
 

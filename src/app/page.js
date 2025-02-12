@@ -9,6 +9,8 @@ import Formulário from "./components/Formulario";
 import ImersaoSection from "./components/ImersaoSection";
 import Oferta from "./components/Oferta";
 import Lorrane from "./components/Lorrane";
+import Footer from "./components/Footer";
+
 export default function Home() {
   return (
     <>
@@ -22,6 +24,7 @@ export default function Home() {
       <Lorrane> </Lorrane>
       <Formulário />
       <FAQ />
+      <Footer />
     </>
   );
 }

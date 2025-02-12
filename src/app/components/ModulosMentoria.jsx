@@ -12,7 +12,7 @@ const modules = [
   {
     id: 1,
     name: "Módulo 1 - Antônio (Contador)",
-    image: "/cap1.png", // substitua pelo caminho correto da imagem
+    image: "/cap1.png",
     bullets: [
       "Como abrir o CNPJ sem dores de cabeça.",
       "Registro da empresa no CREFITO.",
@@ -23,7 +23,7 @@ const modules = [
   {
     id: 2,
     name: "Módulo 2 - Danilo (Educador Financeiro)",
-    image: "/cap2.png", // substitua pelo caminho correto da imagem
+    image: "/cap2.png",
     bullets: [
       "Gerencie suas finanças com estratégia.",
       "Aprenda a investir e fazer seu dinheiro trabalhar por você."
@@ -32,7 +32,7 @@ const modules = [
   {
     id: 3,
     name: "Módulo 3 - Social Media",
-    image: "/cap3.png", // substitua pelo caminho correto da imagem
+    image: "/cap3.png",
     bullets: [
       "Estratégias para redes sociais: Instagram, Facebook, tráfego orgânico e pago.",
       "Como captar pacientes e criar uma comunicação profissional.",
@@ -42,7 +42,7 @@ const modules = [
   {
     id: 4,
     name: "Módulo 4 - Lorrane",
-    image: "/cap4.png", // substitua pelo caminho correto da imagem
+    image: "/cap4.png",
     bullets: [
       "Organização de rotina e metas realistas.",
       "Materiais e documentos essenciais para atendimento domiciliar.",
@@ -62,7 +62,7 @@ const ModulosMentoria = () => {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
-          autoplay={{ delay: 100, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
