@@ -24,7 +24,7 @@ export default function MentoraSection() {
         {/* Imagem */}
         <div className="lg:w-1/2 flex justify-center items-center">
           <img
-            src="/lorrane3.png"
+            src="/lorrane4.png"
             alt="Mentora"
             className="w-full -my-14 sm:w-[500px] md:w-[600px] lg:w-[700px] h-[700px] object-cover lg:mt-40"
           />
