@@ -18,7 +18,7 @@ function InteractiveBackground() {
 
     // Cria partículas
     const particles = [];
-    const particleCount = 200; // Ajuste conforme desejado
+    const particleCount = 250; // Ajuste conforme desejado
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * width,
@@ -152,7 +152,7 @@ export default function Formulario() {
           </div>
 
           {/* Botão com efeito neon */}
-          <button className="w-full mt-6 bg-gradient-to-r from-[#00C6FF] to-[#0066FF] hover:brightness-110 text-white font-semibold text-lg px-6 py-4 rounded-lg focus:outline-none shadow-md transform hover:scale-105 transition duration-300 relative overflow-hidden">
+          <button className="w-full mt-6 bg-gradient-to-r from-[#00C6FF] to-[#0066FF] hover:brightness-110 text-white font-semibold text-lg  py-4 rounded-lg focus:outline-none shadow-md transform hover:scale-105 transition duration-300 relative overflow-hidden px-6 ">
             QUERO PARTICIPAR DA PRIMEIRA TURMA
             <span className="absolute inset-0 bg-white opacity-10 blur-lg"></span>
           </button>

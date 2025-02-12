@@ -7,7 +7,8 @@ import QueroFaze from "./components/QueroFaze";
 import FAQ from "./components/Faq";
 import Formulário from "./components/Formulario";
 import ImersaoSection from "./components/ImersaoSection";
-
+import Oferta from "./components/Oferta";
+import Lorrane from "./components/Lorrane";
 export default function Home() {
   return (
     <>
@@ -17,7 +18,9 @@ export default function Home() {
       <ModulosMentoria />
       <QueroFaze />
       <ImersaoSection />
-        <Formulário />
+      <Oferta />
+      <Lorrane> </Lorrane>
+      <Formulário />
       <FAQ />
     </>
   );
