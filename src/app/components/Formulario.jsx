@@ -161,7 +161,8 @@ export default function Formulario() {
       <div className="relative z-10 w-full max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold leading-tight">
           Inscreva-se <span className="text-[#00C6FF]">agora</span> e dê o primeiro
-          passo para a sua <span className="text-[#00C6FF]">liberdade profissional</span>
+          passo para a sua 
+          <span className="text-[#00C6FF]"> liberdade profissional</span>
         </h2>
         <p className="mt-4 text-gray-300 text-lg">
           Fique por dentro de todas as novidades e receba informações exclusivas sobre
