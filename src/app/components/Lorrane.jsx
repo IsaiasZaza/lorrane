@@ -4,20 +4,20 @@ export default function MentoraSection() {
       <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center justify-center gap-8 lg:-mt-40">
         {/* Texto */}
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-          <h2 className="text-3xl mt-10 sm:text-3xl lg:text-4xl font-bold text-[#009ACF] mb-4">
+          <h2 className="text-3xl mt-12 sm:text-3xl lg:text-4xl font-bold text-[#009ACF] mb-4">
             Conheça sua mentora
           </h2>
           <p className="text-gray-700 text-md sm:text-base md:text-lg mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+            Lorrane Azevêdo, fisioterapeuta apaixonada pelo cuidado e bem-estar de idosos. Tenho 26 anos, sou formada pelo CEUB, especializada em Gerontologia e Neurologia, áreas que me permitem atuar com excelência na recuperação e manutenção da qualidade de vida dos meus pacientes.
           </p>
           <p className="text-gray-700 text-md sm:text-base md:text-lg mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className="text-[#05D8FF]">eiusmod</span> tempor incididunt ut labore et dolore magna aliqua.
+            Acredito que o envelhecimento pode e deve ser vivido com autonomia, funcionalidade e independência. Por isso, dedico meu trabalho à fisioterapia domiciliar para idosos, proporcionando atendimentos humanizados e personalizados, diretamente no conforto do lar.
           </p>
           <p className="text-gray-700 text-md sm:text-base md:text-lg mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+            Assim como um bom café traz aconchego e energia, meu propósito é ser esse suporte diário na jornada dos meus pacientes.
           </p>
           <p className="text-gray-700 text-md sm:text-base md:text-lg mb-4">
-            Lorem ipsum dolor sit amet, <span className="text-[#05D8FF] font-semibold">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            E por isso, decidi lançar a minha mentoria e ajudar a fazer com que você transforme a sua vida assim como eu consegui!
           </p>
         </div>
 

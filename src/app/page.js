@@ -10,6 +10,7 @@ import ImersaoSection from "./components/ImersaoSection";
 import Oferta from "./components/Oferta";
 import Lorrane from "./components/Lorrane";
 import Footer from "./components/Footer";
+import ModulesFaq from "./components/ModulesFaq";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <HeroSection />
       <ObstaclesSection />
       <MentoriasSection />
-      <ModulosMentoria />
+      <ModulesFaq />
       <QueroFaze />
       <ImersaoSection />
       <Oferta />
