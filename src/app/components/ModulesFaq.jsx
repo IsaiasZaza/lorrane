@@ -1,6 +1,14 @@
 "use client";
 import { useState } from "react";
-import { FiPlus, FiMinus, FiUserCheck, FiBriefcase, FiDollarSign, FiGlobe, FiCalendar } from "react-icons/fi";
+import { 
+  FiUserCheck, 
+  FiBriefcase, 
+  FiDollarSign, 
+  FiGlobe, 
+  FiCalendar,
+  FiChevronDown,
+  FiChevronUp 
+} from "react-icons/fi";
 
 const ModulesFaq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -73,14 +81,16 @@ const ModulesFaq = () => {
   return (
     <section className="bg-gradient-to-r from-[#ffffff] via-[#f5f5f5] to-[#e0e0e0] py-12">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl font-bold lg:text-4xl text-center mb-8  text-[#00C6FF]">
-          Conheça os módulos da mentoria "Saúde, Café e Inovação"
+        <h2 className="text-3xl font-bold lg:text-4xl text-center mb-8 text-[#00C6FF]">
+          Conheça os módulos da mentoria 
+          <br />
+          "Saúde, Café e Inovação"
         </h2>
         <p className="text-center text-lg text-gray-600 mb-6">
           Clique em cada módulo para visualizar as aulas correspondentes.
         </p>
 
-        <div className="space-y-6">
+        <div className="space-y-6" >
           {modulesData.map((module, index) => (
             <div
               key={index}
@@ -99,13 +109,13 @@ const ModulesFaq = () => {
                   <h3 className="text-lg lg:text-xl font-medium text-gray-800">{module.question}</h3>
                 </div>
                 {activeIndex === index ? (
-                  <FiMinus className="text-2xl text-[#00C6FF] transition-all duration-300" />
+                  <FiChevronUp className="text-2xl text-[#00C6FF] transition-all duration-300" />
                 ) : (
-                  <FiPlus className="text-2xl text-gray-500 transition-all duration-300 hover:text-[#00C6FF]" />
+                  <FiChevronDown className="text-2xl text-gray-500 transition-all duration-300 hover:text-[#00C6FF]" />
                 )}
               </div>
               <div
-                className={`overflow-hidden transition-all duration-500 ${
+                className={`overflow-hidden transition-all duration-500  ${
                   activeIndex === index ? "max-h-96 mt-4 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >

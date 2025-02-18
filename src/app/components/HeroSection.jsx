@@ -6,14 +6,19 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[80vh] flex items-center justify-center text-center text-white">
+    <div className="relative w-full h-[90vh] flex items-center justify-center text-center text-white">
       {/* Iframe de fundo */}
-      <iframe
+      <video
+        src="/video/IMG_7504.MOV"
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://www.youtube.com/embed/YYXyLYA2M7I?si=q34PJ92aQqliw3IS"
-        frameBorder="0"
-        allow="autoplay; fullscreen; loop; encrypted-media; picture-in-picture"
-      ></iframe>
+        autoPlay
+        loop
+        muted
+        playsInline
+        onEnded={(e) => e.currentTarget.play()} // Garante que o vídeo continue sem exibir controles
+      >
+      </video>
+
 
       {/* Sobreposição escura */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-85"></div>

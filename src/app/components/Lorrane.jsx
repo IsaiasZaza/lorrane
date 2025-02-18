@@ -1,6 +1,6 @@
 export default function MentoraSection() {
   return (
-    <section className="relative w-full -mt-0 bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5] flex items-center justify-center lg:">
+    <section className="relative w-full mt-0 bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5] flex items-center justify-center lg:">
       <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center justify-center gap-8 lg:-mt-40">
         {/* Texto */}
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">

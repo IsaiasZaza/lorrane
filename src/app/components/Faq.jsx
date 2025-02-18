@@ -56,11 +56,10 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`bg-white bg-opacity-70 backdrop-blur-md p-6 rounded-2xl transition-shadow transform hover:-translate-y-1 duration-300 ease-in-out ${
-                activeIndex === index
+              className={`bg-white bg-opacity-70 backdrop-blur-md p-6 rounded-2xl transition-shadow transform hover:-translate-y-1 duration-300 ease-in-out ${activeIndex === index
                   ? "border-l-4 border-[#00C6FF] shadow-xl"
                   : "border border-gray-200 shadow-md hover:shadow-xl"
-              }`}
+                }`}
             >
               <div
                 onClick={() => toggleFAQ(index)}
@@ -76,9 +75,8 @@ const FAQ = () => {
                 )}
               </div>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  activeIndex === index ? "max-h-96 mt-4" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? "max-h-96 mt-4" : "max-h-0"
+                  }`}
               >
                 <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
               </div>

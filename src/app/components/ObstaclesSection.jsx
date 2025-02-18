@@ -34,10 +34,10 @@ const ObstaclesSection = () => {
             
             {/* Botão com animação de pulsação usando CSS */}
             <button 
-            className="mt-8 shadow-blue-300 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-"
+            className="mt-8 uppercase shadow-blue-300 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-"
             onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
             >
-                QUERO FAZER PARTE DO TIME!
+                Sim! Quero mudar minha história.
             </button>
 
             <style jsx>{`
