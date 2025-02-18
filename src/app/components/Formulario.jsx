@@ -18,7 +18,7 @@ function InteractiveBackground() {
 
     // Cria partículas
     const particles = [];
-    const particleCount = 250; // Ajuste conforme desejado
+    const particleCount = 250;
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * width,
@@ -53,7 +53,6 @@ function InteractiveBackground() {
     animate();
 
     function handleResize() {
-      // Atualiza dimensões quando o container for redimensionado
       width = parent.clientWidth;
       height = parent.clientHeight;
       canvas.width = width;
@@ -113,13 +112,12 @@ export default function Formulario() {
 
       const data = await res.json();
 
-      // Timeout de 2 segundos para simular processamento
+      // Simula processamento com timeout de 2 segundos
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       if (data.success) {
         setResponseMessage("E-mail enviado com sucesso!");
         setMessageType("success");
-        // Limpa os campos do formulário
         setFormData({
           nome: "",
           email: "",
@@ -135,7 +133,6 @@ export default function Formulario() {
       setMessageType("error");
     } finally {
       setLoading(false);
-      // Limpa a mensagem após 5 segundos
       setTimeout(() => {
         setResponseMessage("");
         setMessageType("");
@@ -143,7 +140,7 @@ export default function Formulario() {
     }
   }
 
-  // Define classes condizentes com o tipo da mensagem (sucesso ou erro)
+  // Define classes para a mensagem (sucesso ou erro)
   const messageClasses =
     messageType === "success"
       ? "bg-green-100 border-green-500 text-green-800"
@@ -152,27 +149,30 @@ export default function Formulario() {
       : "";
 
   return (
-    // Container com fundo escuro e efeito interativo restrito a ele
-    <div id="formulario" className="relative bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-[#f5f5f5] py-16 px-6 md:px-12 flex flex-col items-center justify-center mx-auto space-y-8">
-      {/* Fundo interativo apenas para esta seção */}
+    // Container com fundo escuro e fundo interativo
+    <div
+      id="formulario"
+      className="relative bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-[#f5f5f5] py-16 px-4 sm:px-6 md:px-12 flex flex-col items-center justify-center mx-auto space-y-8"
+    >
+      {/* Fundo interativo */}
       <InteractiveBackground />
 
       {/* Texto */}
-      <div className="relative z-10 w-full max-w-2xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-          Inscreva-se <span className="text-[#00C6FF]">agora</span> e dê o primeiro
-          passo para a sua 
-          <span className="text-[#00C6FF]"> liberdade profissional</span>
+      <div className="relative z-10 w-full max-w-2xl text-center px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+          Inscreva-se{" "}
+          <span className="text-[#00C6FF]">agora</span> e dê o primeiro passo
+          para a sua <span className="text-[#00C6FF]">liberdade profissional</span>
         </h2>
-        <p className="mt-4 text-gray-300 text-lg">
-          Fique por dentro de todas as novidades e receba informações exclusivas sobre
-          o treinamento, além de documentos e conteúdos que vão transformar sua carreira.
-          Não perca a chance de fazer parte da primeira turma em abrir!
+        <p className="mt-4 text-gray-300 text-base sm:text-lg">
+          Fique por dentro de todas as novidades e receba informações exclusivas
+          sobre o treinamento, além de documentos e conteúdos que vão transformar
+          sua carreira. Não perca a chance de fazer parte da primeira turma em abrir!
         </p>
       </div>
 
       {/* Formulário */}
-      <div className="relative z-10 w-full max-w-xl bg-[#181818] p-8 rounded-xl shadow-2xl border border-[#2A2A2A] ring-1 ring-[#0f0f0f]">
+      <div className="relative z-10 w-full max-w-xl bg-[#181818] p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl border border-[#2A2A2A] ring-1 ring-[#0f0f0f]">
         <form className="space-y-5" onSubmit={handleSubmit}>
           {/* Nome */}
           <div className="space-y-1">
@@ -241,7 +241,7 @@ export default function Formulario() {
           {/* Botão com efeito neon */}
           <button
             type="submit"
-            className="w-full mt-6 bg-gradient-to-r from-[#00C6FF] to-[#0066FF] hover:brightness-110 text-white font-semibold text-lg py-4 rounded-lg focus:outline-none shadow-md transform hover:scale-105 transition duration-300 relative overflow-hidden px-6"
+            className="w-full mt-6 bg-gradient-to-r from-[#00C6FF] to-[#0066FF] hover:brightness-110 text-white font-semibold text-sm sm:text-base md:text-lg py-4 rounded-lg focus:outline-none shadow-md transform hover:scale-105 transition duration-300 relative overflow-hidden px-6"
           >
             {loading ? "Enviando..." : "QUERO PARTICIPAR DA PRIMEIRA TURMA"}
             <span className="absolute inset-0 bg-white opacity-10 blur-lg"></span>

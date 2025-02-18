@@ -7,28 +7,28 @@ const ImersaoSection = () => {
     {
       text: "Material completo para consulta pós-mentoria.",
       icon: <FaFileAlt className="text-3xl" />,
-      dark: true
+      dark: true,
     },
     {
       text: "30 templates prontos para redes sociais.",
       icon: <FaLayerGroup className="text-3xl" />,
-      dark: false
+      dark: false,
     },
     {
       text: "Documentos editáveis em Word e Canva para facilitar sua rotina",
       icon: <FaFileWord className="text-3xl" />,
-      dark: true
+      dark: true,
     },
     {
       text: "Cartões de visita editáveis no Canva.",
       icon: <FaIdCard className="text-3xl" />,
-      dark: false
-    }
+      dark: false,
+    },
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5] py-16 px-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0f0f0f] uppercase">
+    <section className="bg-gradient-to-b from-[#e5e5e5] to-[#F5F5F5] py-16 px-6 sm:px-8 text-center">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0f0f0f] uppercase">
         Você também vai <span className="text-[#05D8FF]">ganhar</span>
       </h2>
       <p className="text-lg md:text-xl text-gray-600 mt-4 max-w-3xl mx-auto">
@@ -52,8 +52,11 @@ const ImersaoSection = () => {
       </div>
 
       <button
-        onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
-        className="mt-8 uppercase bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-lg">
+        onClick={() =>
+          document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })
+        }
+        className="mt-8 uppercase bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 sm:px-12 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-lg"
+      >
         Garanta seu lugar agora mesmo!
       </button>
 

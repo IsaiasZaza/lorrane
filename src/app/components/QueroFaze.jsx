@@ -33,7 +33,7 @@ const QueroFaze = () => {
   return (
     <section className="bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-white text-center py-12 px-6">
       <h2 className="text-xl md:text-4xl font-bold cursor-default">
-        <span className="text-[#05D8FF]">Seus pacientes</span> podem estar esperando por <span className="text-[#05D8FF]">você</span>.
+        <span className="text-[#05D8FF]">Seus pacientes</span> podem estar esperando por <span className="text-[#05D8FF]">você.</span>
         <br />
         <span>Está preparado para <span className="text-[#05D8FF]">fazer a diferença?</span></span>
       </h2>

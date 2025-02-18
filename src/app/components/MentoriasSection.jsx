@@ -30,7 +30,7 @@ const MentoriaSection = () => {
           <span className="text-[#05D8FF]">fisioterapeutas</span> que:
         </motion.h2>
         <motion.ul
-          className="space-y-4 text-gray-300 mb-6 text-xl font-semibold"
+          className="space-y-4 text-gray-300 mb-6 lg:text-xl text-base font-semibold"
           initial="hidden"
           animate="visible"
           transition={{ staggerChildren: 0.2 }}
