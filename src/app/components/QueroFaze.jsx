@@ -30,12 +30,17 @@ const QueroFaze = () => {
 
   return (
     <section className="bg-gradient-to-b from-[#0f0f0f] via-[#222222] to-[#2c2c2c] text-white text-center py-12 px-6">
-      <h2 className="text-xl md:text-3xl font-bold">
-        <span className="text-[#05D8FF]">Seus pacientes</span> podem estar esperando por <span className="text-[#05D8FF]">você</span>. Está preparado para <span className="text-[#05D8FF]">fazer a diferença?</span>
+      <h2 className="text-xl md:text-4xl font-bold cursor-default">
+        <span className="text-[#05D8FF]">Seus pacientes</span> podem estar esperando por <span className="text-[#05D8FF]">você</span>.
+        <br />
+        <span>Está preparado para <span className="text-[#05D8FF] ">fazer a diferença?</span></span>
       </h2>
-      <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-        Os resultados dos atendimentos domiciliares transformam vidas! Confira o que os pacientes
-        da Lar.me têm a dizer sobre o impacto do cuidado profissional e personalizado que receberam:
+      <p className="mt-4 text-gray-300 mx-auto text-xl cursor-default">
+        Os resultados dos atendimentos domiciliares transformam vidas!
+
+        <span className='w-full'><br />Confira o que os pacientes da Lorrane têm a dizer
+          sobre o
+          impacto do cuidado profissional e personalizado que receberam:</span>
       </p>
 
       <div className="flex justify-center gap-6 mt-6 flex-wrap">
@@ -81,7 +86,9 @@ const QueroFaze = () => {
       </div>
 
       {/* Botão com animação de pulsação usando CSS */}
-      <button className="mt-8 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-lg">
+      <button
+        onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
+        className="mt-8 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-lg">
         QUERO FAZER PARTE DO TIME!
       </button>
 

@@ -11,7 +11,7 @@ const listItemVariants = {
 const ObstaclesSection = () => {
     return (
         <div className="w-full py-12 bg-[#F5F5F5] flex flex-col items-center text-center px-6">
-            <h2 className="text-2xl text-[#0F0F0F] md:text-4xl font-bold mb-6 max-w-2xl">
+            <h2 className="text-2xl text-[#0F0F0F] md:text-4xl font-bold mb-6 max-w-4xl">
                 Você também sente que algo está te{" "}
                 <span className="text-[#A52A2A]">impedindo de crescer</span> como fisioterapeuta?
             </h2>
@@ -33,7 +33,10 @@ const ObstaclesSection = () => {
             </ul>
             
             {/* Botão com animação de pulsação usando CSS */}
-            <button className="mt-8 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-lg">
+            <button 
+            className="mt-8 shadow-blue-300 bg-gradient-to-b from-[#05D8FF] to-[#2B67DF] hover:from-[#09D9E0] hover:to-[#2A66DE] text-white font-semibold px-6 md:px-24 py-3 rounded-full focus:outline-none transition duration-300 transform hover:scale-105 animate-scale shadow-"
+            onClick={() => document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" })}
+            >
                 QUERO FAZER PARTE DO TIME!
             </button>
 
