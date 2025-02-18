@@ -4,7 +4,7 @@ export default function MentoraSection() {
       <div className="container mx-auto px-8 flex flex-col lg:flex-row items-center justify-center gap-8 lg:-mt-40">
         {/* Texto */}
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-          <h2 className="text-3xl mt-1 sm:text-3xl lg:text-4xl font-bold text-[#009ACF] mb-4">
+          <h2 className="text-3xl mt-14 sm:text-3xl lg:text-4xl font-bold text-[#009ACF] mb-4">
             Conheça sua mentora
           </h2>
           <p className="text-gray-700 text-md sm:text-base md:text-lg mb-4">
